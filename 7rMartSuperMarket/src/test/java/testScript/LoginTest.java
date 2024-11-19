@@ -11,7 +11,7 @@ import pages.LoginPage;
 import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
-	/*@DataProvider(name= "credentials") 
+	/*@DataProvider(name= "credentials") // multiple user name password in same test case we use dataProvider parameter
 	   public Object[][] testData(){ 
 	 	  Object[][] input= new Object[2][2]; 
 	 	  input[0][0] = "admin"; 
@@ -23,7 +23,7 @@ public class LoginTest extends Base {
 	 	  
 	  } */
 	   //@Test(dataProvider ="credentials" ) 
-	@Test
+	@Test(groups = {"smoke"})
 	   public void verifyUserIsAbletoLoginValidCredentials(/*String username , String password */ ) throws IOException { 
 	 	   
 	 	 String username= ExcelUtility.readStringData(1, 0, "loginpage");

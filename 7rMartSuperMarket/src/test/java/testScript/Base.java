@@ -55,7 +55,7 @@ public class Base {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));// implicit wait
 	}
 
-	@AfterMethod // close and quit should execute after all test case execution
+/*	@AfterMethod // close and quit should execute after all test case execution
 	 public void browserQuit(ITestResult iTestResult) throws IOException { 
 			if (iTestResult.getStatus() == ITestResult.FAILURE) { 
 				scrshot = new ScreenShotUtility(); 
@@ -64,5 +64,5 @@ public class Base {
 
 			driver.quit(); 
 		}
-
+*/
 }
